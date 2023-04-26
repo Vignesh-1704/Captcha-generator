@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)) , url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrapper{
+    height: 40%;
+    width: 43%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50% , -50%);
+    border-radius: 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.title{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.first-div{
+    display: flex;
+    gap: 5%;
+}
+
+.first-div p{
+    background: url('bg2.PNG');
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 75%;
+    margin-left: 10px;
+    height: 58px;
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    color: black;
+    letter-spacing: 10px;
+    font-family: 'Mynerve', cursive;
+}
+.first-div .reload{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 5px;
+    font-size: 30px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.input-fields .input-captcha {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 75%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content button:active {
+    transform: scale(0.89);
+}
+
+.sub{
+    height: 30px;
+    width: 30%;
+    background: #b3ffab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b3ffab, #12fff7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b3ffab, #12fff7);
+    margin-left: 30%;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.sub:active {
+    transform: scale(0.89);
+}
+
+
+.sub:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
